@@ -80,7 +80,7 @@ public class Program {
     {
         SymbolTable.PopulateBuiltins();
         var T = new Tokenizer();
-        // using(StreamReader r = new StreamReader("../../../tests/inputs/testrightshift.txt")) {
+        // using(StreamReader r = new StreamReader("../../../tests/inputs/float-26.txt")) {
         //     T.SetInput(r.ReadToEnd());
         // }
         using(StreamReader r = new StreamReader(args[0])) {

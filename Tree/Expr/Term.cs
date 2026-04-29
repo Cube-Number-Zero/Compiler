@@ -45,6 +45,18 @@ public class Term(Token term) : ExprNode(term) {
                                     offset: -(this.temporary.number + 1) * 8,
                                     dst: Register.rbp));
                 return;
+            case "BOOLCONST":
+                if (this.token.lexeme == "true")
+                    v = 1;
+                else if (this.token.lexeme == "false")
+                    v = 0;
+                else {
+                    Utils.Error("Bogus boolean constant");
+                    return; // bogus
+                }
+                Asm.Asm.Emit(new Comment($"Constant {this.token}"), new OpMoveConstReg(value: v, dst: Register.rax));
+                this.temporary!.CopyFromRegister(Register.rax, StorageClass.STATIC);
+                return;
             default:
                 throw new NotImplementedException();
         }

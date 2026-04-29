@@ -7,7 +7,7 @@ public class RelNode(Token tok, ExprNode left, ExprNode right) : BinaryOperator(
     public override void GenCode() {
         left.GenCode();
         right.GenCode();
-        if (this.type! == VarType.Int) {
+        if (this.left.type! == VarType.Int) {
             left.temporary!.CopyToRegister(Asm.Register.rax);
             right.temporary!.CopyToRegister(Asm.Register.rbx);
             string cc = this.token.lexeme switch
@@ -26,7 +26,7 @@ public class RelNode(Token tok, ExprNode left, ExprNode right) : BinaryOperator(
                 new Asm.OpCmovCC(cc, Asm.Register.rdx, Asm.Register.rcx));
 
             this.temporary!.CopyFromRegister(Asm.Register.rcx, StorageClass.STATIC);
-        } else if (this.type! == VarType.Float) {
+        } else if (this.left.type! == VarType.Float) {
             
             this.left.temporary!.CopyToRegister(Asm.Register.xmm0);
             this.right.temporary!.CopyToRegister(Asm.Register.xmm1);

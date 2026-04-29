@@ -76,7 +76,7 @@ def error(*msg):
 
 def main():
     stopOnFirstFail=True
-    stopOnFirstFailBonus=False
+    stopOnFirstFailBonus=True
 
     global VERBOSE
     global SKIP

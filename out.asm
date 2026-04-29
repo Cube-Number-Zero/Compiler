@@ -30,14 +30,13 @@ pushq %rbp
 movq %rsp, %rbp
 /* Allocate space for 3 temporaries */
 subq $48, %rsp
-/* Doing bitwise at 3:13 */
-/* Constant [NUM at line 3 column 11: 10] */
-movabsq $10, %rax
+/* Constant [NUM at line 3 column 11: 3] */
+movabsq $3, %rax
 /* Copy register to temporary 1 */
 movq %rax, -32(%rbp)
 /* Set storage class of temporary 1 */
 movq $12345, -24(%rbp)
-/* Constant [NUM at line 3 column 14: 3] */
+/* Constant [NUM at line 3 column 16: 3] */
 movabsq $3, %rax
 /* Copy register to temporary 2 */
 movq %rax, -48(%rbp)
@@ -47,9 +46,13 @@ movq $12345, -40(%rbp)
 movq -32(%rbp), %rax
 /* Copy temporary 2 value to register */
 movq -48(%rbp), %rbx
-xor %rbx, %rax
+xor %rcx, %rcx
+xor %rdx, %rdx
+incq %rdx
+cmpq %rbx, %rax
+cmovne %rdx, %rcx
 /* Copy register to temporary 0 */
-movq %rax, -16(%rbp)
+movq %rcx, -16(%rbp)
 /* Set storage class of temporary 0 */
 movq $12345, -8(%rbp)
 /* Copy temporary 0 value to register */

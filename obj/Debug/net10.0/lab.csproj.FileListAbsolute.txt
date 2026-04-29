@@ -12,3 +12,4 @@ c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\refint\lab.dll
 c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.pdb
 c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.genruntimeconfig.cache
 c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\ref\lab.dll
+C:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.sourcelink.json

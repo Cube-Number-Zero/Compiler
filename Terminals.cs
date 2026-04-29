@@ -19,7 +19,7 @@ public static class Terminals{
         BOOLOP :: (and\b)|(or\b)
         BOOLNOT :: not\b
         ID :: [a-zA-Z_]\w*
-        FNUM :: ((\d*)\.(\d+)\b)|(((\d+)|((\d*)\.(\d+)))[eE]([\+\-]?(\d+))\b)
+        FNUM :: -?((\d*)\.(\d+)\b)|(((\d+)|((\d*)\.(\d+)))[eE]([\+\-]?(\d+))\b)
         NUM :: (\d+)\b
         LBRACE :: \{
         RBRACE :: \}
