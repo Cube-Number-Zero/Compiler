@@ -1,6 +1,7 @@
 ﻿using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using lab;
+COMPILER="bin/Debug/net10.0/lab.exe"
 
 public class StopIteration : Exception {}
 public class Program {
