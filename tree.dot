@@ -1,0 +1,11 @@
+graph foo {
+n4 [label="="];
+n0 [label="x"];
+n3 [label="+"];
+n1 [label="y"];
+n2 [label="z"];
+n4 -- n0
+n4 -- n3
+n3 -- n1
+n3 -- n2
+}

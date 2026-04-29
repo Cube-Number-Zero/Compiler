@@ -1,0 +1,14 @@
+c:\Classwork\Compiler Design\lab\bin\Debug\net10.0\lab.exe
+c:\Classwork\Compiler Design\lab\bin\Debug\net10.0\lab.deps.json
+c:\Classwork\Compiler Design\lab\bin\Debug\net10.0\lab.runtimeconfig.json
+c:\Classwork\Compiler Design\lab\bin\Debug\net10.0\lab.dll
+c:\Classwork\Compiler Design\lab\bin\Debug\net10.0\lab.pdb
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.GeneratedMSBuildEditorConfig.editorconfig
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.AssemblyInfoInputs.cache
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.AssemblyInfo.cs
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.csproj.CoreCompileInputs.cache
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.dll
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\refint\lab.dll
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.pdb
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\lab.genruntimeconfig.cache
+c:\Classwork\Compiler Design\lab\obj\Debug\net10.0\ref\lab.dll
